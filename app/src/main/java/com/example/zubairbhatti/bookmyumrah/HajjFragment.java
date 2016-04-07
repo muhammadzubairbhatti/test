@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-// This comment is added by Khurram for testing purposes
+// This comment is added by Khurram Mir - Test 2 for testing purposes
 /**
  * A simple {@link Fragment} subclass.
  */
