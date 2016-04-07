@@ -1,0 +1,194 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zubairbhatti.bookmyumrah.HajjFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:textSize="15dp"
+            android:id="@+id/umrahSearch"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:onClick="goToSearch"
+            android:background="#ffffff" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:text="Best Price"
+                    android:textSize="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:textColor="#f5b220"
+                    android:background="#ffffff" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:text="Discount"
+                    android:textSize="30dp"
+                    android:textColor="#f5b220"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:text="BMU Selected"
+                    android:textColor="#f5b220"
+                    android:textSize="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:text="Premium Packages"
+                    android:textSize="30dp"
+                    android:textColor="#f5b220"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"/>
+
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:text="Best Price"
+                    android:textSize="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:textColor="#f5b220"
+                    android:background="#ffffff" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:text="Discount"
+                    android:textSize="30dp"
+                    android:textColor="#f5b220"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:text="BMU Selected"
+                    android:textColor="#f5b220"
+                    android:textSize="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:text="Premium Packages"
+                    android:textSize="30dp"
+                    android:textColor="#f5b220"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"/>
+
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:text="Best Price"
+                    android:textSize="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:textColor="#f5b220"
+                    android:background="#ffffff" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:text="Discount"
+                    android:textSize="30dp"
+                    android:textColor="#f5b220"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:text="BMU Selected"
+                    android:textColor="#f5b220"
+                    android:textSize="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:text="Premium Packages"
+                    android:textSize="30dp"
+                    android:textColor="#f5b220"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"/>
+
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+
+
+</FrameLayout>
