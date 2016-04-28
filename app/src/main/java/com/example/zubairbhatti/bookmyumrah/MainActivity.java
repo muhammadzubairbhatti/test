@@ -1,13 +1,18 @@
 package com.example.zubairbhatti.bookmyumrah;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.TabLayout;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v4.widget.NestedScrollView;
+import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,6 +21,8 @@ import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.ImageSpan;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
@@ -30,9 +37,9 @@ public class MainActivity extends AppCompatActivity {
 
 
     private int[] tabIcon = {
-            R.drawable.i,
-            R.drawable.i,
-            R.drawable.i,
+            R.drawable.umrah_icon,
+            R.drawable.hajj_icon,
+            R.drawable.ziyarat_icon,
     };
 
     @Override
@@ -47,8 +54,19 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            Window window = getWindow();
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            window.setStatusBarColor(Color.BLACK);
+        }
+
+
         CollapsingToolbarLayout collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapse_toolbar);
         collapsingToolbarLayout.setTitle(" ");
+/*
+        collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(R.color.transperent)); // transperent color = #00000000
+        collapsingToolbarLayout.setCollapsedTitleTextColor(Color.rgb(0, 0, 0)); //Color of your title
+*/
 
         Context context = this;
         collapsingToolbarLayout.setContentScrimColor(ContextCompat.getColor(context, R.color.colorAccent));
@@ -58,12 +76,14 @@ public class MainActivity extends AppCompatActivity {
         tabLayout = (TabLayout) findViewById(R.id.tabLayout);
         viewPager = (ViewPager) findViewById(R.id.viewPager);
 
-
+        NestedScrollView scrollView = (NestedScrollView) findViewById (R.id.nest_scrollview);
+        scrollView.setFillViewport (true);
 
 
         actionBarDrawerToggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.drawer_open,
                 R.string.drawer_close);
         drawerLayout.setDrawerListener(actionBarDrawerToggle);
+
 
 
         viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
@@ -92,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 public void headerClick(View view){
-    Intent intent = new Intent(this,UmrahPackages.class);
+    Intent intent = new Intent(this,LoginActivity.class);
     startActivity(intent);
 }
 }

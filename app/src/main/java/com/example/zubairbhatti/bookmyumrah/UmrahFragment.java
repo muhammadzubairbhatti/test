@@ -45,7 +45,7 @@ public class UmrahFragment extends Fragment  {
             @Override
             public void onClick(View v) {
                 //Pass the context and the Activity class you need to open from the Fragment Class, to the Intent
-                Intent intent = new Intent(context, UmrahPackages.class);
+                Intent intent = new Intent(context, SearchActivity.class);
                 startActivity(intent);
             }
         });
